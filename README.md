@@ -28,6 +28,7 @@ A lightweight, client-side task management application built with **React** and 
 
 ## 📁 Project Structure
 
+```
 task-manager/
 ├── src/
 │ ├── components/
@@ -43,10 +44,7 @@ task-manager/
 ├── package.json
 ├── vite.config.js
 ├── README.md
-
-
-
----
+```
 
 ## 🚀 Setup Instructions
 
