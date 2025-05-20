@@ -1,101 +1,141 @@
-Simple Task Manager
-A lightweight, client-side task management application built with React and Vite. This project allows users to add, complete, delete, and filter tasks, with persistence using localStorage. The application is designed with modern React practices, functional components, hooks, and clean CSS styling without external frameworks.
-Features
+# Simple Task Manager
 
-Add Tasks: Create new tasks with a title and unique ID.
-Mark as Completed: Toggle task completion status with a checkbox.
-Delete Tasks: Remove tasks from the list.
-Filter Tasks: View all, completed, or pending tasks.
-Local Storage: Persists tasks across page reloads using localStorage.
-Responsive Design: Clean, user-friendly interface optimized for various screen sizes.
-Production-Ready: Modular components, efficient state management, and accessible UI.
+A lightweight, client-side task management application built with **React** and **Vite**. This project allows users to add, complete, delete, and filter tasks, with persistence using `localStorage`. The application is designed with modern React practices — functional components, hooks, and clean CSS styling without external frameworks.
 
-Tech Stack
+---
 
-React: Frontend library using functional components and hooks.
-Vite: Build tool for fast development and optimized production builds.
-JavaScript: Core logic with crypto.randomUUID for unique task IDs.
-CSS: Custom styles without external frameworks.
-LocalStorage: Client-side storage for task persistence.
+## ✨ Features
 
-Project Structure
+- **Add Tasks**: Create new tasks with a title and unique ID.
+- **Mark as Completed**: Toggle task completion status with a checkbox.
+- **Delete Tasks**: Remove tasks from the list.
+- **Filter Tasks**: View all, completed, or pending tasks.
+- **Local Storage**: Tasks persist across page reloads using `localStorage`.
+- **Responsive Design**: Clean, user-friendly interface optimized for all screen sizes.
+- **Production-Ready**: Modular components, efficient state management, and accessible UI.
+
+---
+
+## 🛠 Tech Stack
+
+- **React**: Frontend library using functional components and hooks.
+- **Vite**: Build tool for fast development and optimized production builds.
+- **JavaScript**: Core logic with `crypto.randomUUID` for unique task IDs.
+- **CSS**: Custom styles in a single file (`styles.css`).
+- **LocalStorage**: Client-side task persistence.
+
+---
+
+## 📁 Project Structure
+
 task-manager/
 ├── src/
-│   ├── components/
-│   │   ├── TaskInput.jsx
-│   │   ├── TaskList.jsx
-│   │   ├── TaskItem.jsx
-│   ├── utils/
-│   │   ├── mainUtil.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── styles.css
+│ ├── components/
+│ │ ├── TaskInput.jsx
+│ │ ├── TaskList.jsx
+│ │ ├── TaskItem.jsx
+│ ├── utils/
+│ │ ├── mainUtil.js
+│ ├── App.jsx
+│ ├── main.jsx
+│ ├── styles.css
 ├── index.html
 ├── package.json
 ├── vite.config.js
 ├── README.md
 
-Setup Instructions
-Prerequisites
-
-Node.js (version 16 or higher)
-npm (version 8 or higher)
-
-Installation
-
-Clone the Repository:
-git clone https://github.com/<your-username>/task-manager.git
-cd task-manager
 
 
-Install Dependencies:
-npm install
+---
 
+## 🚀 Setup Instructions
 
-Run the Development Server:
-npm run dev
+### ✅ Prerequisites
 
-Open http://localhost:5173 in your browser to view the application.
+- **Node.js** (version 16 or higher)
+- **npm** (version 8 or higher)
 
-Build for Production:
-npm run build
+### 🔧 Installation
 
-This generates optimized files in the dist/ folder.
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/<your-username>/task-manager.git
+    cd task-manager
+    ```
 
-Preview Production Build:
-npm run preview
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
+3. **Run the Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:5173](http://localhost:5173) to view the application.
 
+4. **Build for Production**:
+    ```bash
+    npm run build
+    ```
 
-Usage
+    Optimized files will be generated in the `dist/` folder.
 
-Add a Task: Enter a task title in the input field and click "Add Task".
-Complete a Task: Check the checkbox next to a task to mark it as completed.
-Delete a Task: Click the "Delete" button next to a task to remove it.
-Filter Tasks: Use the "All", "Completed", or "Pending" buttons to filter the task list.
-Tasks are automatically saved to localStorage and persist across page reloads.
+5. **Preview Production Build**:
+    ```bash
+    npm run preview
+    ```
 
-Code Highlights
+---
 
-Modular Components: TaskInput, TaskList, and TaskItem for separation of concerns.
-State Management: Uses React hooks (useState, useEffect) for efficient state handling.
-Utility Functions: setTasksToLocalStorage in utils/mainUtil.js for reusable localStorage logic.
-CSS Styling: Consolidated in styles.css with component-specific class names.
-Accessibility: Semantic HTML and ARIA-compatible checkboxes.
+## 🧠 Usage
 
-Contributing
-Contributions are welcome! Please follow these steps:
+- **Add a Task**: Enter a title and click "Add Task".
+- **Complete a Task**: Use the checkbox to mark it as completed.
+- **Delete a Task**: Click "Delete" to remove it.
+- **Filter Tasks**: Use "All", "Completed", or "Pending" buttons.
+- All tasks are stored in `localStorage` and persist on reload.
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Make your changes and commit (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/your-feature).
-Open a Pull Request.
+---
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-Acknowledgments
+## 💡 Code Highlights
 
-Built with Vite and React.
-Inspired by modern task management applications.
+- **Modular Components**: `TaskInput`, `TaskList`, and `TaskItem` for clean separation of logic.
+- **State Management**: `useState`, `useEffect` hooks for efficient reactivity.
+- **Utility Functions**: `setTasksToLocalStorage()` in `utils/mainUtil.js` for managing storage.
+- **CSS Styling**: All styles in `styles.css`, using scoped class names.
+- **Accessibility**: Uses semantic HTML and ARIA-compatible elements.
 
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how to get started:
+
+1. **Fork** the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add your feature'
+    ```
+4. Push to your branch:
+    ```bash
+    git push origin feature/your-feature
+    ```
+5. **Open a Pull Request**.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgments
+
+- Built with [Vite](https://vitejs.dev/) and [React](https://reactjs.org/)
+- Inspired by modern task management applications
